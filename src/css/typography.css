@@ -1,0 +1,47 @@
+body {
+  font-family: 'Inter Tight', serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+}
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.015em;
+}
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 108%;
+  letter-spacing: -0.015em;
+}
+h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.015em;
+}
+button {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -0.015em;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 125%;
+  }
+  h1 {
+    font-size: 76px;
+  }
+  h2 {
+    font-size: 64px;
+    line-height: 100%;
+  }
+  h3 {
+    font-size: 32px;
+  }
+}
