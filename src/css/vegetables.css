@@ -1,4 +1,13 @@
 .vegetables-section {
-  padding: 0;
+  padding: 80px 20px;
 }
-/* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
+@media only screen and (min-width: 768px) {
+  .vegetables-section {
+    padding: 100px 32px;
+  }
+}
+@media only screen and (min-width: minwidthpx) {
+  .vegetables-section {
+    padding: 100px 100px;
+  }
+}
