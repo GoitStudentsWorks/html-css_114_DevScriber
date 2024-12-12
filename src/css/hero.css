@@ -1,4 +1,142 @@
-.hero-section {
-  padding: 0;
+/* background For mobile */
+.hero {
+  background-color: #576f35;
 }
-/* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
+
+.hero-container {
+  padding: 100px 20px 40px;
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  max-width: 335px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.00;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 335px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+
+.hero-img {
+  min-width: 320px;
+  max-width: 375px;
+  height: 370px;
+
+  background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-mob.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+
+/*  RETINA background For mobile */
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      url(../img/hero/hero-vegetables-mob@2x.jpg);
+  }
+}
+
+/* background For tablet  */
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding: 120px 32px 52px;
+    max-width: 768px;
+  }
+
+  .hero-title {
+    max-width: 704px;
+    font-size: 76px;
+
+    margin-bottom: 24px;
+  }
+
+  .hero-text {
+    max-width: 704px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero-img {
+    max-width: 768px;
+    height: 536px;
+
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-tab.jpg);
+  }
+
+
+  /*  RETINA background For tablet */
+  @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+        url(../img/hero/hero-vegetables-tab@2x.jpg);
+    }
+  }
+}
+
+/* background For descktop  */
+@media only screen and (min-width: 1158px) {
+  .hero {
+    display: flex;
+    gap: 36px;
+
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  .hero>.container {
+    max-width: 640px;
+    padding: 232px 0px 0px 100px;
+  }
+
+  .hero-container {
+    max-width: 504px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+  }
+
+  .hero-title {
+    width: 502px;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    width: 472px;
+  }
+
+  .hero-img {
+    width: 640px;
+    height: 796px;
+
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-desck.jpg);
+  }
+
+
+  /*  RETINA background For tablet */
+  @media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+        url(../img/hero/hero-vegetables-desck@2x.jpg);
+    }
+  }
+}
