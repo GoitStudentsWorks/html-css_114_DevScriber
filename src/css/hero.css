@@ -1,13 +1,11 @@
 /* background For mobile */
 .hero {
-  background-color: #576f35;
+  background-color: var(--green-background);
 }
 
 .hero-container {
-  padding: 100px 20px 40px;
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .hero-title {
@@ -17,7 +15,7 @@
   line-height: 1.00;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #fbfbfb;
+  color: var(--white-text);
 
   margin-bottom: 20px;
 }
@@ -27,7 +25,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  color: #fbfbfb;
+  color: var(--white-text);
 }
 
 .hero-img {
@@ -57,7 +55,6 @@
 @media only screen and (min-width: 768px) {
   .hero-container {
     padding: 120px 32px 52px;
-    max-width: 768px;
   }
 
   .hero-title {

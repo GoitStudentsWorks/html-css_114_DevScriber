@@ -14,6 +14,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --black-text: #141414;
+  --white-text: #fbfbfb;
+  --primary-brand: #7a3145;
+  --accent: #d4bfc4;
+  --green-background: #576f35;
+  --details: #858585;
+  --transparent-black: #141414;
+  --success-state: #3cbc81;
+  --error-state: #e74a3b;
 }
 
 body {
@@ -27,6 +37,7 @@ body {
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
 }
