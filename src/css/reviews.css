@@ -7,12 +7,13 @@
   max-width: 375px;
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 40px;
 }
 .reviews-block {
+  max-width: 335px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -48,12 +49,19 @@
 
   background-color: #fbfbfb;
 }
+.reviews-item {
+  max-width: 335px;
+}
 .item-john {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
+}
+.item-victoria,
+.item-ihor {
+  display: none;
 }
 .card-reviews {
   display: flex;
@@ -104,12 +112,16 @@
   .container-reviews {
     max-width: 768px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    gap: 10px;
+    margin: 0 auto;
+    gap: 52px;
   }
   .reviews-block {
+    max-width: 553px;
+    margin-right: auto;
+
     gap: 25px;
   }
   .logo-reviews {
@@ -124,23 +136,52 @@
   }
   .reviews-list {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     gap: 32px;
+
+    border: none;
   }
   .reviews-item {
+    max-width: 340px;
+  }
+  .card-reviews {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #d4bfc4;
     border-radius: 24px;
     padding: 20px;
     width: 340px;
     height: 248px;
   }
-  .card-reviews {
-    padding: 20px;
-  }
 
   .item-victoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .reviews {
+    padding: 100px;
+  }
+  .container-reviews {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .reviews-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+  .item-ihor {
     display: flex;
     align-items: center;
     justify-content: center;
