@@ -1,5 +1,31 @@
 .footer {
-  padding: 0;
+  background-color: 7A3145;
+}
+.container {
+}
+.footer-logo {
+}
+.footer-nav {
+}
+.footer-address {
+}
+.footer-address-list {
+}
+.footer-address-item {
+}
+.footer-address-tel {
+}
+.footer-address-place {
+}
+.footer-bottom {
+}
+.footer-bottom-item {
+}
+.footer-privacy {
+}
+.footer-privacy-slash {
+}
+.footer-copyright {
 }
 
 /* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
