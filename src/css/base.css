@@ -24,6 +24,10 @@
   --transparent-black: #141414;
   --success-state: #3cbc81;
   --error-state: #e74a3b;
+  --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-background-color: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -39,4 +43,18 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+/* прихований заголовок */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
