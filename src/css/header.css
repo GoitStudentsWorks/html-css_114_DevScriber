@@ -2,7 +2,7 @@
   background-color: var(--green-background);
 }
 .header-container {
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    padding: 32px;
+    padding-top: 32px;
   }
   .header-logo {
     gap: 9px;
@@ -50,10 +50,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .header-container {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
   .header-logo {
     margin-right: 366px;
   }
@@ -64,14 +60,7 @@
     display: flex;
     gap: 8px;
   }
-  /* .nav-item {
-    padding: 12px;
-    border: 1px solid #fbfbfb;
-    border-radius: 12px;
-    color: #fbfbfb;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
-      border-color 250ms ease-in-out;
-  } */
+
   .nav-link {
     padding: 12px;
     border: 1px solid var(--white-text);
