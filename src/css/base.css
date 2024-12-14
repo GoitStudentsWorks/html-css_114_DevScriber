@@ -15,7 +15,8 @@
   --success-state: #3cbc81;
   --error-state: #e74a3b;
   --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-background-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-background-color: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
   --transition-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -32,6 +33,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+
+  overflow-x: hidden;
 }
 
 main {
