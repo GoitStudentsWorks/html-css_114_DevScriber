@@ -96,7 +96,7 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: center;
-  color: #141414;
+  color: var(--black-text);
 }
 .text-reviews-info {
   font-weight: 500;
