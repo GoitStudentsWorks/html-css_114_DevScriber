@@ -1,5 +1,6 @@
 /* background For mobile */
 .hero {
+  position: relative;
   background-color: var(--green-background);
 }
 
@@ -10,7 +11,6 @@
 
 .hero-title {
   text-transform: uppercase;
-
   margin-bottom: 20px;
 }
 
@@ -19,7 +19,7 @@
   max-width: 375px;
   height: 370px;
 
-  background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-mob.jpg);
+  background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/mobile/hero-bascket-img@2x.webp);
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 (min-resolution: 2dppx) {
   .hero-img {
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-      url(../img/hero/hero-vegetables-mob@2x.jpg);
+      url(../img/mobile/hero-bascket-img@2x.webp);
   }
 }
 
@@ -52,7 +52,7 @@
     max-width: 768px;
     height: 536px;
 
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-tab.jpg);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/tablet/hero-bascket-img.webp);
   }
 }
 
@@ -62,7 +62,7 @@
 (min-resolution: 2dppx) {
   .hero-img {
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-      url(../img/hero/hero-vegetables-tab@2x.jpg);
+      url(../img/tablet/hero-bascket-img@2x.webp);
   }
 }
 
@@ -103,7 +103,7 @@
     width: 640px;
     height: 796px;
 
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-desck.jpg);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/desktop/hero-bascket-img.webp);
   }
 }
 
@@ -112,6 +112,6 @@
 (min-resolution: 2dppx) {
   .hero-img {
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-      url(../img/hero/hero-vegetables-desck@2x.jpg);
+      url(../img/desktop/hero-bascket-img@2x.webp);
   }
 }
