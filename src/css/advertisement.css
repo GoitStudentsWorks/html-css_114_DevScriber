@@ -1,5 +1,6 @@
 .advertisement {
   padding: 80px 0;
+  background-color: var(--white-text);
 }
 
 .advertisement-wrap {
@@ -10,38 +11,45 @@
 }
 
 .advertisement-descr {
-  max-width: 335px;
-
-  font-weight: 600;
+  
   font-size: 48px;
   line-height: 1.1;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--black-text);
 }
 
 @media only screen and (min-width: 768px) {
   .advertisement {
-    padding: 100px 0;
+    padding: 100px 0 ;
   }
-
+  .advertisement-wrap {
+    padding-top: 20px;
+    padding-right: 16px;
+  }
   .advertisement-descr {
-    max-width: 704px;
+    
     font-size: 64px;
     line-height: 1;
+    margin-bottom: 12px;
   }
-  .advertisement-container {
-    padding: 0 32px;
-  }
+  
 }
 
 @media only screen and (min-width: 1280px) {
   .advertisement-descr {
-    max-width: 1080px;
     font-size: 76px;
+    
   }
-  .advertisement-container {
-      padding: 0 100px;
+  
+  .advertisement-wrap {
+    padding: 0 ;
+    padding-left: 16px;
+    padding-right: 8px;
+    padding-top: 4px;
+    margin-left: -16px;
+    
   }
-
+.advertisement-descr-wrap {
+  margin-left: 16px;
+}
 }
