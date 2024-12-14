@@ -28,7 +28,7 @@
 .text-reviews {
   font-weight: 500;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 1.25;
   color: var(--black-text);
 }
 .reviews-list {
@@ -77,8 +77,8 @@
 }
 .text-reviews-info {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
+
+  line-height: 1.25;
   text-align: center;
   color: var(--details);
 }
@@ -108,7 +108,7 @@
   }
   .text-reviews {
     font-size: 16px;
-    line-height: 1.25;
+
     color: var(--black-text);
   }
   .reviews-list {
@@ -141,6 +141,9 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
+  }
+  .text-reviews-info {
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 1280px) {
