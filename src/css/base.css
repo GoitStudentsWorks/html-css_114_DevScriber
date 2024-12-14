@@ -1,7 +1,4 @@
 :root {
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,6 +25,9 @@ html {
 }
 
 body {
+  font-family: 'Inter Tight', serif;
+  color: var(--white-text);
+  background-color: var(--green-background);
   display: flex;
   flex-direction: column;
   min-width: 100vw;
