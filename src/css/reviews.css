@@ -1,11 +1,8 @@
 .reviews {
-  padding: 80px 20px;
+  padding: 80px 0;
   background-color: var(--white-text);
 }
 .container-reviews {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,24 +15,20 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 20px;
 }
 
-.logo-reviews {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.08;
-  letter-spacing: -0.01em;
+.title-reviews {
   text-transform: uppercase;
   color: var(--black-text);
+  margin-bottom: 20px;
 }
-.logo-reviews-link {
+.title-reviews-link {
   color: var(--green-background);
 }
 .text-reviews {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: 16px;
+  line-height: 125%;
   color: var(--black-text);
 }
 .reviews-list {
@@ -50,7 +43,7 @@
   background-color: var(--white-text);
 }
 .reviews-item {
-  max-width: 335px;
+  width: 335px;
 }
 .item-john {
   display: flex;
@@ -72,36 +65,20 @@
 }
 
 .image-reviews {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 8px;
-  border-radius: 72px;
-  padding: 12px;
-  width: 56px;
-  height: 56px;
+  margin-bottom: 24px;
 }
-.reviews-box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
-}
+
 .name-reviews {
-  font-weight: 600;
   font-size: 18px;
-  line-height: 1.11;
-  letter-spacing: -0.01em;
+  margin-bottom: 8px;
   text-transform: uppercase;
   text-align: center;
   color: var(--black-text);
 }
 .text-reviews-info {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: 16px;
+  line-height: 125%;
   text-align: center;
   color: var(--details);
 }
@@ -124,7 +101,7 @@
 
     gap: 25px;
   }
-  .logo-reviews {
+  .title-reviews {
     font-size: 64px;
     line-height: 1;
     letter-spacing: -0.01em;
@@ -144,7 +121,7 @@
     border: none;
   }
   .reviews-item {
-    max-width: 340px;
+    width: 340px;
   }
   .card-reviews {
     padding: 20px;
@@ -166,20 +143,24 @@
     gap: 24px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .reviews {
     padding: 100px;
   }
   .container-reviews {
-    max-width: 1080px;
+    max-width: 1280px;
     margin: 0 auto;
   }
   .reviews-list {
+    max-width: 1080px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+  .reviews-item {
+    width: 344px;
   }
   .item-ihor {
     display: flex;
