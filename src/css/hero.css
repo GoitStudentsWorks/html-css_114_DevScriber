@@ -108,7 +108,7 @@
 }
 
 /*  RETINA background For descktop */
-@media only screen and (min-width: 1280git add --allpx) and (min-resolution: 192dpi),
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-img {
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
