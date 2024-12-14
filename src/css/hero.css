@@ -76,17 +76,18 @@
 
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-tab.jpg);
   }
+}
 
 
-  /*  RETINA background For tablet */
-  @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .hero-img {
-      background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-        url(../img/hero/hero-vegetables-tab@2x.jpg);
-    }
+/*  RETINA background For tablet */
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      url(../img/hero/hero-vegetables-tab@2x.jpg);
   }
 }
+
 
 /* background For descktop  */
 @media only screen and (min-width: 1158px) {
@@ -126,14 +127,13 @@
 
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/hero/hero-vegetables-desck.jpg);
   }
+}
 
-
-  /*  RETINA background For descktop */
-  @media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .hero-img {
-      background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-        url(../img/hero/hero-vegetables-desck@2x.jpg);
-    }
+/*  RETINA background For descktop */
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      url(../img/hero/hero-vegetables-desck@2x.jpg);
   }
 }
