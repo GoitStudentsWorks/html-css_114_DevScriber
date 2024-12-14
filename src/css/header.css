@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--green-background);
+  background-color: transparent;
 }
 .header-container {
   padding-top: 20px;
@@ -10,6 +10,7 @@
   display: flex;
   gap: 4px;
   align-items: center;
+  outline-color: transparent;
 }
 .nav-list {
   display: none;
@@ -66,10 +67,12 @@
     border: 1px solid var(--white-text);
     border-radius: 12px;
     color: var(--white-text);
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
-      border-color 250ms ease-in-out;
+    transition: var(--transition-color), var(--transition-background-color),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
-  .nav-link:hover {
+  .nav-link:hover,
+  .nav-link:focus {
     color: var(--primary-brand);
     background-color: var(--accent);
     border-color: var(--accent);
@@ -86,9 +89,10 @@
     background: var(--primary-brand);
     color: var(--white-text);
     border: none;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    transition: var(--transition-color), var(--transition-background-color);
   }
-  .header-btn:hover {
+  .header-btn:hover,
+  .header-btn:focus {
     background-color: var(--accent);
     color: var(--primary-brand);
   }
@@ -99,4 +103,3 @@
     display: none;
   }
 }
-/* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
