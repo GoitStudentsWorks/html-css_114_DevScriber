@@ -1,5 +1,4 @@
-body {
-  font-family: 'Inter Tight', serif;
+p {
   font-weight: 500;
   font-size: 14px;
   line-height: 143%;
@@ -30,7 +29,7 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
+  p {
     font-size: 16px;
     line-height: 125%;
   }
