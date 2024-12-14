@@ -9,23 +9,9 @@
 }
 
 .hero-title {
-  max-width: 335px;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.00;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: var(--white-text);
 
   margin-bottom: 20px;
-}
-
-.hero-text {
-  max-width: 335px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
-  color: var(--white-text);
 }
 
 .hero-img {
@@ -58,17 +44,9 @@
   }
 
   .hero-title {
-    max-width: 704px;
-    font-size: 76px;
-
     margin-bottom: 24px;
   }
 
-  .hero-text {
-    max-width: 704px;
-    font-size: 16px;
-    line-height: 1.25;
-  }
 
   .hero-img {
     max-width: 768px;
@@ -90,7 +68,7 @@
 
 
 /* background For descktop  */
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .hero {
     display: flex;
     gap: 36px;
@@ -130,7 +108,7 @@
 }
 
 /*  RETINA background For descktop */
-@media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+@media only screen and (min-width: 1280git add --allpx) and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-img {
     background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
