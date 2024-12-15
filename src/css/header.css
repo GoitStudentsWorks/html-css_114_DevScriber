@@ -1,4 +1,102 @@
 .header {
+  background-color: var(--green-background);
+}
+.header-container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.nav-list {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+.burger-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .burger-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .header-icon-box {
+    width: 16px;
+    height: 16px;
+  }
+  .header-icon {
+    width: 148px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 32px;
+  }
+  .header-logo {
+    gap: 9px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-logo {
+    margin-right: 366px;
+  }
+  .header-nav {
+    display: flex;
+  }
+  .nav-list {
+    display: flex;
+    gap: 8px;
+  }
+
+  .nav-link {
+    padding: 12px;
+    border: 1px solid var(--white-text);
+    border-radius: 12px;
+    color: var(--white-text);
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+      border-color 250ms ease-in-out;
+  }
+  .nav-link:hover {
+    color: var(--primary-brand);
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+  .nav-link:active {
+    background-color: var(--white-text);
+    border-color: var(--white-text);
+  }
+  .header-btn {
+    display: block;
+    margin-left: auto;
+    border-radius: 30px;
+    padding: 16px 32px;
+    background: var(--primary-brand);
+    color: var(--white-text);
+    border: none;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  .header-btn:hover {
+    background-color: var(--accent);
+    color: var(--primary-brand);
+  }
+  .header-btn:active {
+    background-color: var(--white-text);
+  }
+  .burger-btn {
+    display: none;
+  }
 }
 /* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
