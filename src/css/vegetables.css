@@ -16,9 +16,7 @@
   }
 }
 .vegetables-titel {
-letter-spacing: -0.01em;
 text-transform: uppercase;
-
 margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
