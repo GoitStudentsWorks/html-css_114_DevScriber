@@ -21,5 +21,9 @@ pull-request-list.txt
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< HEAD
 *.sw?
 
+=======
+*.sw?
+>>>>>>> main
