@@ -4,8 +4,7 @@
 }
 .container-reviews {
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   flex-direction: column;
   gap: 40px;
 }
@@ -43,7 +42,7 @@
   background-color: var(--white-text);
 }
 .reviews-item {
-  width: 335px;
+  max-width: 335px;
 }
 .item-john {
   display: flex;
@@ -146,15 +145,12 @@
 }
 @media only screen and (min-width: 1280px) {
   .reviews {
-    padding: 100px;
+    padding: 100px 0;
   }
 
   .reviews-list {
     max-width: 1080px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
   .reviews-item {
