@@ -27,6 +27,11 @@ button {
   line-height: 111%;
   letter-spacing: -0.015em;
 }
+a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+}
 
 @media only screen and (min-width: 768px) {
   p {
@@ -42,5 +47,10 @@ button {
   }
   h3 {
     font-size: 32px;
+  }
+  a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
   }
 }
