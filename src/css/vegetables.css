@@ -15,15 +15,6 @@
     
   }
 }
-.vegetables-titel-container {  
-margin-bottom: 40px;
-}
-@media only screen and (min-width: 768px) {
-  .vegetables-titel-container {
-  max-width: 626px;
-  margin-bottom: 52px;
-  }
-}
 .vegetables-titel {
 letter-spacing: -0.01em;
 text-transform: uppercase;
@@ -32,24 +23,21 @@ margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-titel {
-    font-size: 64px;
     margin-bottom: 24px;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .vegetables-titel {
-    line-height: 1;
-  }
-}
+
 .vegetables-titel-part {
   color:  #d4bfc4;
+}
+.vegetables-titel-text {
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .vegetables-titel-text {
-    font-size: 16px;
-    line-height: 1.25;
-  }
+      margin-bottom: 52px;
+      }
 }
 .vegetables-list {
   display: flex;
@@ -79,29 +67,26 @@ flex-direction: column;
 gap: 12px;
 border-radius: 40px;
 padding: 32px 24px;
-width: 335px;
-height: 376px;
+flex-basis: calc((100% - 2 * 24px));
 background-color: #fbfbfb;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-item {
-    width: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
     gap: 12px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .vegetables-item {
-    width: calc((100% - 2 * 24px) / 3);
+    flex-basis: calc((100% - 2 * 24px) / 3);
     gap: 8px;
   }
 }
-
 .vegetables-item-titel {
 text-transform: uppercase;
 color: #7a3145;
 margin-bottom: 12px;
 }
-
 .vegetables-item-price {
 color: #141414;
 }
