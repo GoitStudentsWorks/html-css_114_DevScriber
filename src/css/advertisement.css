@@ -1,4 +1,58 @@
-.advertisement-section {
-  padding: 0;
+.advertisement {
+  padding: 80px 0;
+  background-color: var(--white-text);
 }
-/* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
+
+.advertisement-wrap {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: var(--green-background);
+  color: var(--white-text);
+}
+
+.advertisement-descr {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+
+@media only screen and (min-width: 768px) {
+  .advertisement {
+    padding: 100px 0 112px;
+  }
+  .advertisement-wrap {
+    padding-top: 20px;
+    padding-right: 16px;
+  }
+  .advertisement-descr {
+    
+    font-size: 64px;
+    line-height: 1;
+    
+  }
+  
+}
+
+@media only screen and (min-width: 1280px) {
+  .advertisement {
+    padding: 100px 0;
+  }
+  .advertisement-descr {
+    font-size: 76px;
+    
+  }
+  
+  .advertisement-wrap {
+    padding: 0 ;
+    padding-left: 16px;
+    padding-right: 8px;
+    padding-top: 4px;
+    margin-left: -16px;
+    
+  }
+  .advertisement-descr-wrap {
+    margin-left: 16px;
+  }
+}
