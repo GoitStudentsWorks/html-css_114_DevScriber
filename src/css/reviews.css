@@ -36,13 +36,13 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
-  border: 1px solid var(--accent);
-  border-radius: 24px;
 
   background-color: var(--white-text);
 }
 .reviews-item {
   max-width: 335px;
+  border: 1px solid var(--accent);
+  border-radius: 24px;
 }
 .item-john {
   display: flex;
@@ -83,7 +83,7 @@
 }
 @media only screen and (min-width: 768px) {
   .reviews {
-    padding: 100px 32px;
+    padding: 100px 0;
   }
   .container-reviews {
     display: flex;
@@ -95,7 +95,6 @@
   }
   .reviews-block {
     max-width: 553px;
-    margin-right: auto;
   }
   .title-reviews {
     font-size: 64px;
@@ -118,7 +117,16 @@
     border: none;
   }
   .reviews-item {
-    width: 340px;
+    min-width: 340px;
+    height: 248px;
+    border: 1px solid var(--accent);
+    border-radius: 24px;
+  }
+  .item-victoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
   }
   .card-reviews {
     padding: 20px;
@@ -126,35 +134,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--accent);
-    border-radius: 24px;
-
-    width: 340px;
-    height: 248px;
   }
 
-  .item-victoria {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-  }
   .text-reviews-info {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .reviews {
-    padding: 100px 0;
-  }
-
   .reviews-list {
     max-width: 1080px;
-
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
   .reviews-item {
-    width: 344px;
+    min-width: 344px;
+    height: 248px;
   }
   .item-ihor {
     display: flex;
