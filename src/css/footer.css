@@ -24,7 +24,7 @@
   row-gap: 14px;
   margin-bottom: 40px;
 }
-.footer-nav-item {
+.footer-nav-link {
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
@@ -102,12 +102,7 @@
   }
   .footer-text,
   .footer-address-item,
-  .footer-address-place {
-    font-size: 16px;
-    line-height: 125%;
-  }
-  .footer-bottom-item,
-  .footer-copyright {
+  .footer-bottom-item {
     font-size: 16px;
     line-height: 125%;
   }
