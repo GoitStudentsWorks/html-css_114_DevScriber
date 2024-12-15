@@ -1,4 +1,117 @@
-.hero-section {
-  padding: 0;
+/* background For mobile */
+.hero {
+  position: relative;
+  background-color: var(--green-background);
 }
-/* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
+
+.hero-container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  min-width: 320px;
+  max-width: 375px;
+  height: 370px;
+
+  background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/mobile/hero-bascket-img@2x.webp);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+
+/*  RETINA background For mobile */
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      url(../img/mobile/hero-bascket-img@2x.webp);
+  }
+}
+
+/* background For tablet  */
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding: 120px 32px 52px;
+  }
+
+  .hero-title {
+    margin-bottom: 24px;
+  }
+
+
+  .hero-img {
+    max-width: 768px;
+    height: 536px;
+
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/tablet/hero-bascket-img.webp);
+  }
+}
+
+
+/*  RETINA background For tablet */
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      url(../img/tablet/hero-bascket-img@2x.webp);
+  }
+}
+
+
+/* background For descktop  */
+@media only screen and (min-width: 1280px) {
+  .hero {
+    display: flex;
+    gap: 36px;
+
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  .hero>.container {
+    max-width: 640px;
+    padding: 232px 0px 0px 100px;
+  }
+
+  .hero-container {
+    max-width: 504px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+  }
+
+  .hero-title {
+    width: 502px;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    width: 472px;
+  }
+
+  .hero-img {
+    width: 640px;
+    height: 796px;
+
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../img/desktop/hero-bascket-img.webp);
+  }
+}
+
+/*  RETINA background For descktop */
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      url(../img/desktop/hero-bascket-img@2x.webp);
+  }
+}
