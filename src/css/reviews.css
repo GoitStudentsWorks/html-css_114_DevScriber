@@ -2,19 +2,6 @@
   padding: 80px 0;
   background-color: var(--white-text);
 }
-.container-reviews {
-  display: flex;
-
-  flex-direction: column;
-  gap: 40px;
-}
-.reviews-block {
-  max-width: 335px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-}
 
 .title-reviews {
   text-transform: uppercase;
@@ -25,10 +12,8 @@
   color: var(--green-background);
 }
 .text-reviews {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
   color: var(--black-text);
+  margin-bottom: 40px;
 }
 .reviews-list {
   display: flex;
@@ -58,9 +43,9 @@
 .card-reviews {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+
   flex-direction: column;
-  padding: 20px 16px;
+  padding: 20px 24px;
 }
 
 .image-reviews {
@@ -77,7 +62,7 @@
 .text-reviews-info {
   font-weight: 500;
 
-  line-height: 1.25;
+  line-height: 1.43;
   text-align: center;
   color: var(--details);
 }
@@ -85,26 +70,12 @@
   .reviews {
     padding: 100px 0;
   }
-  .container-reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
 
-    gap: 52px;
-  }
-  .reviews-block {
-    max-width: 553px;
-  }
   .title-reviews {
-    font-size: 64px;
-    line-height: 1;
-    letter-spacing: -0.01em;
     margin-bottom: 24px;
   }
   .text-reviews {
-    font-size: 16px;
-
+    margin-bottom: 52px;
     color: var(--black-text);
   }
   .reviews-list {
@@ -117,8 +88,6 @@
     border: none;
   }
   .reviews-item {
-    min-width: 340px;
-    height: 248px;
     border: 1px solid var(--accent);
     border-radius: 24px;
   }
@@ -129,7 +98,7 @@
     gap: 24px;
   }
   .card-reviews {
-    padding: 20px;
+    padding: 20px 26px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,9 +114,9 @@
     max-width: 1080px;
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
-  .reviews-item {
-    min-width: 344px;
-    height: 248px;
+  .card-reviews {
+    padding-left: 28px;
+    padding-right: 28px;
   }
   .item-ihor {
     display: flex;
