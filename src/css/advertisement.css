@@ -11,7 +11,7 @@
 }
 
 .advertisement-descr {
-  
+  font-weight: 600;
   font-size: 48px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
 
 @media only screen and (min-width: 768px) {
   .advertisement {
-    padding: 100px 0 ;
+    padding: 100px 0 112px;
   }
   .advertisement-wrap {
     padding-top: 20px;
@@ -30,12 +30,15 @@
     
     font-size: 64px;
     line-height: 1;
-    margin-bottom: 12px;
+    
   }
   
 }
 
 @media only screen and (min-width: 1280px) {
+  .advertisement {
+    padding: 100px 0;
+  }
   .advertisement-descr {
     font-size: 76px;
     
@@ -49,7 +52,7 @@
     margin-left: -16px;
     
   }
-.advertisement-descr-wrap {
-  margin-left: 16px;
-}
+  .advertisement-descr-wrap {
+    margin-left: 16px;
+  }
 }
