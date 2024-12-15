@@ -34,7 +34,7 @@
 .footer-address-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  row-gap: 14px;
   margin-bottom: 80px;
 }
 .footer-address-item {
@@ -84,10 +84,11 @@
     margin-right: 212px;
   }
   .footer-menu {
-    max-width: 227px;
+    width: 227px;
   }
   .footer-nav {
     margin-bottom: 64px;
+    row-gap: 24px;
   }
   .footer-bottom {
     display: flex;
@@ -97,6 +98,7 @@
   }
   .footer-address-list {
     margin-bottom: 100px;
+    row-gap: 24px;
   }
   .footer-text,
   .footer-address-item,
@@ -120,7 +122,7 @@
   .footer-menu {
     display: flex;
     flex-direction: row;
-    max-width: none;
+    width: 565px;
     gap: 121px;
   }
   .footer-bottom {
