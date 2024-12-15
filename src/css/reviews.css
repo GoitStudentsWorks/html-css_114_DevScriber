@@ -29,7 +29,6 @@
   background-color: var(--white-text);
 }
 .reviews-item {
-  max-width: 335px;
   border: 1px solid var(--accent);
   border-radius: 24px;
 }
@@ -101,8 +100,7 @@
   .reviews-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-
+    align-items: stretch;
     gap: 24px;
     margin-bottom: 32px;
     border: none;
@@ -115,7 +113,7 @@
   .item-victoria {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
   }
   .card-reviews {
