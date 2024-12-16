@@ -20,12 +20,14 @@
         </h3>
         <form class="order-form">
           <div class="order-form-wrapper">
+            <!-- Диапазон [A-z] включает дополнительные символы между заглавной "Z" и строчной "a" в таблице ASCII. Вместо [A-z] использовано [A-Za-z]. Теперь выражение корректное, но все равно вылетает ошибка :-) -->
             <input
               class="order-form-input"
+              name="text"
               type="text"
               autocomplete="off"
               placeholder="Full name"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
               required
             />
           </div>
@@ -33,10 +35,11 @@
           <div class="order-form-wrapper">
             <input
               class="order-form-input"
+              name="email"
               type="email"
               autocomplete="off"
               placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
               required
             />
           </div>
