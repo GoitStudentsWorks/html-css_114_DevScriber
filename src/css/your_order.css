@@ -93,8 +93,9 @@
   color: var(--black-text);
 }
 
-.order-form-input:focus {
-  border-color: #007bff;
+.order-form-input:focus,
+.order-form-input:hover {
+  border-color: var(--primary-brand);
 }
 
 .order-form-input:not(:placeholder-shown):invalid:focus {
@@ -111,9 +112,9 @@
 }
 
 /* Focus Styles */
-.order-form-input:focus,
+.order-form-comment:hover,
 .order-form-comment:focus {
-  border-color: #007bff;
+  border-color: var(--primary-brand);
 }
 .order-form-comment:focus {
   outline: none;
