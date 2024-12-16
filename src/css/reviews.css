@@ -81,7 +81,7 @@
   border-radius: 50%;
   background-color: var(--accent);
 }
-.point-item-reviews.colorized {
+.point-item-reviews.active {
   background-color: var(--green-background);
 }
 @media only screen and (min-width: 768px) {
