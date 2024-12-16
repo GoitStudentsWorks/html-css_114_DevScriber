@@ -124,6 +124,7 @@
 @media screen and (min-width: 1280px) {
   .how-it-works-content {
     display: flex;
+    margin: 0 -100px;
   }
 
   .how-it-works-background {
@@ -136,9 +137,7 @@
   }
 
   .how-it-works-text-list {
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 0;
+    padding: 100px;
   }
 
   .how-it-works-text {
