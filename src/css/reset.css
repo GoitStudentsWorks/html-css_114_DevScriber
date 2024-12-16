@@ -24,7 +24,6 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: inherit;
 }
 
 /* Common */
@@ -76,6 +75,7 @@ select {
   font-size: inherit;
   color: inherit;
   background-color: transparent;
+  resize: none;
 }
 
 input::-ms-clear {

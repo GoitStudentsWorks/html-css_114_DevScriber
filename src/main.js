@@ -9,5 +9,3 @@ document.querySelector('.burger-button-close').addEventListener('click', functio
   menu.classList.remove('is-open'); // Убираем класс открытия
   menu.classList.add('is-closing'); // Добавляем класс закрытия
 });
-
-

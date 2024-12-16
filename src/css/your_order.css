@@ -1,4 +1,281 @@
-.your_order-section {
-  padding: 0;
+.your_order {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.your_order-centering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .your_order {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .your_order-centering {
+        gap: 32px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .your_order-centering {
+        flex-direction: row;
+    }
+}
+
+/* #region block 1 */
+
+.your_order-text {
+    margin-bottom: 40px;
+}
+
+.your_order-title {
+    text-transform: uppercase;
+    color: var(--white-text);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    
+
+    .your_order-text {
+        max-width: 640px;
+        margin-bottom: 52px;
+    }
+
+    .your_order-title {
+        margin-bottom: 24px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .your_order-text {
+        max-width: 751px;
+    }
+}
+
+/* #endregion */
+
+
+
+/* #region block 2 */
+
+.your_order-form-title {
+    text-transform: uppercase;
+    color: var(--black-text);
+    margin-bottom: 40px;
+}
+
+.your_order-form {
+    background-color: var(--white-text);
+    border-radius: 30px;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.order-form-input {
+    border: 1px solid var(--details);
+    border-radius: 30px;
+    padding: 14px 0 14px 16px;
+    width: 100%;
+    height: 48px;
+    color: var(--black-text);
+}
+
+.order-form-input:focus {
+    border-color: #007bff;
+}
+
+.order-form-input:not(:placeholder-shown):invalid:focus {
+    border-color: var(--error-state);
+
+}
+
+.order-form-input:not(:placeholder-shown):valid:focus {
+    border-color: var(--success-state);
+}
+
+/* Focus Styles */
+.order-form-input:focus,
+.order-form-comment:focus {
+    /* outline: none; */
+    border-color: #007bff;
+}
+
+/* Disabled button style */
+.order-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.order-form-comment {
+    border: 1px solid var(--details);
+    border-radius: 15px;
+    padding: 14px 0 0 16px;
+    height: 92px;
+    width: 100%;
+    color: var(--black-text);
+}
+
+.order-form-input::placeholder,
+.order-form-comment::placeholder {
+    color: var(--black-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+}
+
+
+.order-btn {
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 30px;
+    background-color: var(--primary-brand);
+    color: var(--white-text);
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .your_order-form {
+        padding: 72px 100px;
+        max-width: 640px;
+    }
+    
+    .order-form {
+        margin-bottom: 24px;
+    }
+
+    .your_order-form-title {
+        margin-bottom: 52px;
+    }
+
+    .order-form-input {
+        height: 52px;
+    }
+
+    .order-form-input::placeholder,
+    .order-form-comment::placeholder {
+        font-size: 16px;
+        line-height: 125%;
+    }
+}
+
+@media(min-width: 1280px) {
+    .your_order-form {
+            padding: 52px 48px;
+            max-width: 532px;
+        }
+}
+
+/* #endregion */
+
+
+
+/* #region block 3 */
+
+.social-media {
+    background-color: var(--primary-brand);
+    border-radius: 30px;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.fresh-order-img {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.fresh-order-tablet,
+.fresh-order-desktop {
+    display: none;
+}
+
+
+.follow {
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.social-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--white-text);
+}
+
+@media(min-width: 768px) {
+    .social-media {
+        padding: 52px;
+        max-width: 640px;
+    }
+
+    .fresh-order-img {
+        margin-bottom: 52px;
+    }
+
+    .fresh-order-tablet {
+        display: block;
+    }
+
+    .fresh-order-mobile,
+    .fresh-order-desktop {
+        display: none;
+    }
+}
+
+@media(min-width: 1280px) {
+    .social-media {
+        padding: 52px 48px;
+        max-width: 532px;
+    }
+
+    .fresh-order-img {
+        margin-bottom: 80px;
+    }
+
+    .fresh-order-desktop {
+        display: block;
+    }
+
+    .fresh-order-mobile,
+    .fresh-order-tablet {
+        display: none;
+    }
+}
+
+/* #endregion */
+
+
+.color-blush {
+    color: var(--accent);
+}
+
+.color-burgundy {
+    color: var(--primary-brand);
+}   
+
+.color-green {
+    color: var(--green-background);
 }
 /* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
