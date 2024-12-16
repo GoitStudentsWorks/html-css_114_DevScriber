@@ -1,4 +1,151 @@
-.reviews-section {
-  padding: 0;
+.reviews {
+  padding: 80px 0;
+  background-color: var(--white-text);
 }
-/* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
+.reviews-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+.title-reviews {
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+.title-reviews-link {
+  color: var(--green-background);
+}
+.text-reviews {
+  color: var(--black-text);
+}
+.reviews-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+  background-color: var(--white-text);
+}
+.reviews-item {
+  border: 1px solid var(--accent);
+  border-radius: 24px;
+}
+.item-john {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+.item-victoria,
+.item-ihor {
+  display: none;
+}
+.card-reviews {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  padding: 20px 24px;
+}
+
+.image-reviews {
+  margin-bottom: 24px;
+}
+
+.name-reviews {
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black-text);
+}
+.text-reviews-info {
+  font-weight: 500;
+
+  line-height: 1.43;
+  text-align: center;
+  color: var(--details);
+}
+.point-list-revies {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.point-item-reviews {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+.point-item-reviews.colorized {
+  background-color: var(--green-background);
+}
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 0;
+  }
+  .reviews-block {
+    max-width: 553px;
+    margin-bottom: 52px;
+    gap: 24px;
+  }
+
+  .text-reviews {
+    color: var(--black-text);
+  }
+  .reviews-list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 32px;
+    border: none;
+  }
+  .reviews-item {
+    flex-basis: calc((100% - 24px) / 2);
+    border: 1px solid var(--accent);
+    border-radius: 24px;
+  }
+  .item-victoria {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .card-reviews {
+    padding: 20px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-reviews-info {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews-list {
+    margin-bottom: 0;
+  }
+  .reviews-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+  .card-reviews {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .item-ihor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .point-list-revies {
+    display: none;
+  }
+}
