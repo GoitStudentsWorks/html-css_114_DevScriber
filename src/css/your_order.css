@@ -151,6 +151,8 @@
   color: var(--white-text);
   text-transform: uppercase;
   border: 1px solid var(--primary-brand);
+  transition: var(--transition-background-color);
+  transition: var(--transition-color);
 }
 
 .order-btn:hover,
