@@ -150,6 +150,13 @@
   background-color: var(--primary-brand);
   color: var(--white-text);
   text-transform: uppercase;
+  border: 1px solid var(--primary-brand);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--white-text);
+  color: var(--primary-brand);
 }
 
 @media (min-width: 768px) {
@@ -181,6 +188,16 @@
   .your_order-form {
     padding: 52px 48px;
     max-width: 532px;
+  }
+
+  .order-btn:hover,
+  .order-btn:focus {
+    background-color: var(--accent);
+    color: var(--primary-brand);
+  }
+  .order-btn:active {
+    background-color: var(--white-text);
+    border: 1px solid var(--primary-brand);
   }
 }
 

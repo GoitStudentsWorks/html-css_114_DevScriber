@@ -1,13 +1,14 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(87, 111, 53, 0.8);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header-container {
-  padding-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -47,8 +48,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header-container {
+  .header {
     padding-top: 32px;
+    padding-bottom: 32px;
   }
   .header-logo {
     gap: 9px;
@@ -56,6 +58,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .header {
+    position: absolute;
+    background-color: transparent;
+    margin-bottom: 0;
+  }
   .header-logo {
     margin-right: 366px;
   }
