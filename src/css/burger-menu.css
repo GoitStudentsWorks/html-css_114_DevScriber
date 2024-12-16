@@ -65,6 +65,9 @@
   padding: 12px 0;
   transition: var(--transition-background-color), var(--transition-color);
 }
+.burger-menu-list-item:visited {
+  color: inherit;
+}
 
 .burger-menu-list-item:hover,
 .burger-menu-list-item:focus {
