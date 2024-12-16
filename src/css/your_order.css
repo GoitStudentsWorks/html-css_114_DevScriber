@@ -1,4 +1,4 @@
-.your_order-container {
+.your_order {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 768px) {
-    .your_order-container {
+    .your_order {
         padding-top: 100px;
         padding-bottom: 100px;
     }
