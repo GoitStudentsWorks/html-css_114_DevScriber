@@ -57,14 +57,13 @@
 
 .name-reviews {
   font-size: 18px;
+  line-height: 1.11;
   margin-bottom: 8px;
   text-transform: uppercase;
   text-align: center;
   color: var(--black-text);
 }
 .text-reviews-info {
-  font-weight: 500;
-
   line-height: 1.43;
   text-align: center;
   color: var(--details);
@@ -94,9 +93,6 @@
     gap: 24px;
   }
 
-  .text-reviews {
-    color: var(--black-text);
-  }
   .reviews-list {
     display: flex;
     flex-direction: row;
@@ -123,11 +119,8 @@
     align-items: center;
     justify-content: center;
   }
-
-  .text-reviews-info {
-    font-size: 16px;
-  }
 }
+
 @media only screen and (min-width: 1280px) {
   .reviews-list {
     margin-bottom: 0;
