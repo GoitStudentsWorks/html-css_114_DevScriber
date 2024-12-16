@@ -103,7 +103,7 @@
 }
 
 .order-form-input:not(:placeholder-shown):valid:focus {
-    border-color: var(--green-background);
+    border-color: var(--success-state);
 }
 
 /* Focus Styles */
