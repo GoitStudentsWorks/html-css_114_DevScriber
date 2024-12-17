@@ -1,16 +1,28 @@
-document.querySelector('.burger-btn').addEventListener('click', function () {
+document.addEventListener('DOMContentLoaded', function () {
+  const burgerButton = document.querySelector('.burger-btn');
+  const closeButton = document.querySelector('.burger-button-close');
   const menu = document.querySelector('.burger-menu');
-  menu.classList.remove('is-closing'); // Убираем класс закрытия
-  menu.classList.add('is-open'); // Добавляем класс открытия
-});
+  const overlay = document.querySelector('.overlay');
 
-document
-  .querySelector('.burger-button-close')
-  .addEventListener('click', function () {
-    const menu = document.querySelector('.burger-menu');
+  burgerButton.addEventListener('click', function () {
+    menu.classList.remove('is-closing'); // Убираем класс закрытия
+    menu.classList.add('is-open'); // Добавляем класс открытия
+    overlay.classList.add('is-open'); // Показать overlay
+  });
+
+  closeButton.addEventListener('click', function () {
     menu.classList.remove('is-open'); // Убираем класс открытия
     menu.classList.add('is-closing'); // Добавляем класс закрытия
+    overlay.classList.remove('is-open'); // Скрыть overlay
   });
+
+  overlay.addEventListener('click', function () {
+    menu.classList.remove('is-open'); // Убираем класс открытия
+    menu.classList.add('is-closing'); // Добавляем класс закрытия
+    overlay.classList.remove('is-open'); // Скрыть overlay
+  });
+});
+
 
 var swiper = new Swiper('.swiper', {
   slidesPerView: 1,
