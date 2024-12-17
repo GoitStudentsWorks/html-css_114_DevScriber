@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeButton = document.querySelector('.burger-button-close');
   const menu = document.querySelector('.burger-menu');
   const overlay = document.querySelector('.overlay');
+  const menuLinks = document.querySelectorAll('.burger-menu-list-item');
 
   burgerButton.addEventListener('click', function () {
     menu.classList.remove('is-closing'); // Убираем класс закрытия
@@ -21,7 +22,16 @@ document.addEventListener('DOMContentLoaded', function () {
     menu.classList.add('is-closing'); // Добавляем класс закрытия
     overlay.classList.remove('is-open'); // Скрыть overlay
   });
+
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      menu.classList.remove('is-open'); // Убираем класс открытия
+      menu.classList.add('is-closing'); // Добавляем класс закрытия
+      overlay.classList.remove('is-open'); // Скрыть overlay
+    });
+  });
 });
+
 
 
 var swiper = new Swiper('.swiper', {
