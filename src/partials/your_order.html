@@ -1,3 +1,131 @@
 <section class="your_order">
-  <div class="container"></div>
+  <div class="your_order-container container">
+    <div class="your_order-text">
+      <h2 class="your_order-title">
+        Fresh <span class="color-blush">Harvest</span> Box has got you covered
+      </h2>
+      <p>
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+    </div>
+
+    <div class="your_order-centering">
+      <div class="your_order-form">
+        <h3 class="your_order-form-title">
+          Ordering <span class="color-burgundy">from us</span> is quick and
+          easy! Fill out <span class="color-green">the form</span> below and we
+          will contact you !
+        </h3>
+        <form class="order-form">
+          <div class="order-form-wrapper">
+            <!-- Диапазон [A-z] включает дополнительные символы между заглавной "Z" и строчной "a" в таблице ASCII. Вместо [A-z] использовано [A-Za-z]. Теперь выражение корректное, но все равно вылетает ошибка :-) -->
+            <input
+              class="order-form-input"
+              name="text"
+              type="text"
+              autocomplete="off"
+              placeholder="Full name"
+              pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+              minlength="3"
+              required
+            />
+          </div>
+
+          <div class="order-form-wrapper">
+            <input
+              class="order-form-input"
+              name="email"
+              type="email"
+              autocomplete="off"
+              placeholder="Email"
+              pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+              required
+            />
+          </div>
+
+          <div class="order-form-wrapper">
+            <textarea
+              class="order-form-comment"
+              name="user-comment"
+              autocomplete="off"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+        </form>
+        <button class="order-btn" type="submit">Send</button>
+      </div>
+
+      <div class="social-media">
+        <div class="your_order-img">
+          <!-- Mobile Image 1x and 2x -->
+          <img
+            class="fresh-order-mobile fresh-order-img"
+            src="/img/mobile/your_order-fresh-img.webp"
+            srcset="
+              /img/mobile/your_order-fresh-img.webp    1x,
+              /img/mobile/your_order-fresh-img@2x.webp 2x
+            "
+            alt="squeezing fresh juice into a glass"
+          />
+
+          <!-- Tablet Image 1x and 2x -->
+          <img
+            class="fresh-order-tablet fresh-order-img"
+            src="/img/tablet/your_order-fresh-img.webp"
+            srcset="
+              /img/tablet/your_order-fresh-img.webp    1x,
+              /img/tablet/your_order-fresh-img@2x.webp 2x
+            "
+            alt="squeezing fresh juice into a glass"
+          />
+
+          <!-- Desktop Image 1x and 2x -->
+          <img
+            class="fresh-order-desktop fresh-order-img"
+            src="/img/desktop/your_order-fresh-img.webp"
+            srcset="
+              /img/desktop/your_order-fresh-img.webp    1x,
+              /img/desktop/your_order-fresh-img@2x.webp 2x
+            "
+            alt="squeezing fresh juice into a glass"
+          />
+        </div>
+
+        <p class="follow">Follow us on social networks:</p>
+        <ul class="social-links">
+          <li>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li><span class="social-link">/</span></li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li><span class="social-link">/</span></li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>

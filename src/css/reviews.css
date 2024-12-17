@@ -1,4 +1,125 @@
-.reviews-section {
-  padding: 0;
+.reviews {
+  padding: 80px 0;
+  background-color: var(--white-text);
 }
-/* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
+.reviews-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+.title-reviews {
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+.title-reviews-link {
+  color: var(--green-background);
+}
+.text-reviews {
+  color: var(--black-text);
+}
+.reviews-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+  background-color: var(--white-text);
+}
+.reviews-item {
+  border: 1px solid var(--accent);
+  border-radius: 24px;
+}
+
+.swiper-slide {
+  border: 1px solid var(--accent);
+  border-radius: 24px;
+}
+.card-reviews {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+
+  flex-direction: column;
+  padding: 20px 24px;
+}
+
+.image-reviews {
+  margin-bottom: 24px;
+}
+
+.name-reviews {
+  font-size: 18px;
+  line-height: 1.11;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black-text);
+}
+.text-reviews-info {
+  line-height: 1.43;
+  text-align: center;
+  color: var(--details);
+}
+.swiper-pagination {
+  position: static;
+  margin-top: 25px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d4bfc4;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--green-background);
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 0;
+  }
+  .reviews-block {
+    max-width: 553px;
+    margin-bottom: 52px;
+    gap: 24px;
+  }
+
+  .swiper-slide {
+    border: 1px solid var(--accent);
+    border-radius: 24px;
+  }
+  .card-reviews {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-victoria {
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-list {
+    margin-bottom: 0;
+  }
+
+  .card-reviews {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .item-ihor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .point-list-revies {
+    display: none;
+  }
+}

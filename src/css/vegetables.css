@@ -12,37 +12,46 @@
 @media only screen and (min-width: 1280px) {
   .vegetables-container {
     padding: 100px;
-    
   }
 }
 .vegetables-titel {
-text-transform: uppercase;
-margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.vegetables-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-titel {
-    margin-bottom: 24px;
+    max-width: 508px;
+  }
+  .vegetables-title-wrapper {
+    max-width: 626px;
+    gap: 24px;
+    margin-bottom: 52px;
   }
 }
 
 .vegetables-titel-part {
-  color:  #d4bfc4;
-}
-.vegetables-titel-text {
-  margin-bottom: 40px;
+  color: #d4bfc4;
 }
 
 @media only screen and (min-width: 768px) {
-  .vegetables-titel-text {
-      margin-bottom: 52px;
-      }
+  .vegetables-wrapper {
+    max-width: 626px;
+    gap: 24px;
+    margin-bottom: 52px;
+  }
 }
 .vegetables-list {
   display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-list {
@@ -59,14 +68,14 @@ gap: 20px;
 }
 .vegetables-item {
   display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 12px;
-border-radius: 40px;
-padding: 32px 24px;
-flex-basis: calc((100% - 2 * 24px));
-background-color: #fbfbfb;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 40px;
+  padding: 32px 24px;
+  flex-basis: calc((100% - 2 * 24px));
+  background-color: #fbfbfb;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-item {
@@ -81,10 +90,9 @@ background-color: #fbfbfb;
   }
 }
 .vegetables-item-titel {
-text-transform: uppercase;
-color: #7a3145;
-margin-bottom: 12px;
+  text-transform: uppercase;
+  color: #7a3145;
 }
 .vegetables-item-price {
-color: #141414;
+  color: #141414;
 }
