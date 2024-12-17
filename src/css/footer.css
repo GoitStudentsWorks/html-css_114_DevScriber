@@ -16,6 +16,8 @@
 .footer-text {
   max-width: 335px;
   height: 60px;
+}
+.footer-description {
   margin-bottom: 40px;
 }
 .footer-nav {
@@ -31,11 +33,13 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
+.footer-menu {
+  margin-bottom: 80px;
+}
 .footer-address {
   display: flex;
   flex-direction: column;
   row-gap: 14px;
-  margin-bottom: 80px;
 }
 .footer-address-item {
   display: inline-flex;
@@ -94,6 +98,7 @@
   }
   .footer-menu {
     width: 227px;
+    margin-bottom: 100px;
   }
   .footer-nav {
     margin-bottom: 64px;
@@ -106,7 +111,6 @@
     justify-content: space-between;
   }
   .footer-address {
-    margin-bottom: 100px;
     row-gap: 24px;
   }
   .footer-text,
@@ -122,17 +126,20 @@
   }
   .footer-description {
     margin-right: auto;
+    margin-bottom: 164px;
+    height: auto;
   }
   .footer-menu {
     display: flex;
     flex-direction: row;
     width: 565px;
     gap: 121px;
+    margin-bottom: auto;
   }
   .footer-bottom {
     width: 1080px;
   }
-  .footer-nav {
-    margin-bottom: 124px;
+  .footer-text {
+    height: auto;
   }
 }
