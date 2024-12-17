@@ -20,10 +20,12 @@
         </h3>
         <form class="order-form">
           <div class="order-form-wrapper">
+            <label for="user-name"></label>
             <!-- Диапазон [A-z] включает дополнительные символы между заглавной "Z" и строчной "a" в таблице ASCII. Вместо [A-z] использовано [A-Za-z]. Теперь выражение корректное, но все равно вылетает ошибка :-) -->
             <input
+              id="user-name"
               class="order-form-input"
-              name="text"
+              name="user-name"
               type="text"
               autocomplete="off"
               placeholder="Full name"
@@ -35,9 +37,11 @@
           </div>
 
           <div class="order-form-wrapper">
+            <label for="user-email"></label>
             <input
+              id="user-email"
               class="order-form-input"
-              name="email"
+              name="user-email"
               type="email"
               autocomplete="off"
               placeholder="Email"
@@ -47,15 +51,18 @@
           </div>
 
           <div class="order-form-wrapper">
+            <label for="user-comment"></label>
             <textarea
+              id="user-comment"
               class="order-form-comment"
               name="user-comment"
               autocomplete="off"
               placeholder="Comment"
             ></textarea>
           </div>
+
+          <button class="order-btn" type="submit">Send</button>
         </form>
-        <button class="order-btn" type="submit">Send</button>
       </div>
 
       <div class="social-media">
@@ -105,7 +112,7 @@
               >Instagram</a
             >
           </li>
-          <li><span class="social-link">/</span></li>
+          <span class="social-slash">/</span>
           <li>
             <a
               class="social-link"
@@ -115,7 +122,7 @@
               >Facebook</a
             >
           </li>
-          <li><span class="social-link">/</span></li>
+          <span class="social-link">/</span>
           <li>
             <a
               class="social-link"
