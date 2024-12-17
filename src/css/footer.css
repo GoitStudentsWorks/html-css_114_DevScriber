@@ -32,7 +32,7 @@
   line-height: 100%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  padding: 4px;
+  padding: 0 4px;
   border-radius: 8px;
   transition: var(--transition-background-color), var(--transition-color);
 }
@@ -50,7 +50,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 143%;
-  padding: 4px;
+  padding: 0 4px;
   border-radius: 8px;
   transition: var(--transition-background-color), var(--transition-color);
 }
