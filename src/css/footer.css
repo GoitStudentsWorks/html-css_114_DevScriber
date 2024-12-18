@@ -68,15 +68,10 @@
   line-height: 143%;
   gap: 8px;
 }
-/*.footer-privacy-slash {
-  margin: 0 8px;
-}*/
 .footer-nav-link:hover,
 .footer-nav-link:focus,
 .footer-address-item:hover,
-.footer-address-item:focus,
-.footer-address-item:active,
-.footer-nav-link:active {
+.footer-address-item:focus {
   color: var(--primary-brand);
   background-color: var(--white-text);
 }
@@ -170,5 +165,9 @@
   .footer-address-item:hover,
   .footer-address-item:focus {
     background-color: var(--accent);
+  }
+  .footer-address-item:active,
+  .footer-nav-link:active {
+    background-color: var(--white-text);
   }
 }

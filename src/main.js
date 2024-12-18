@@ -1,3 +1,5 @@
+// Burger menu
+
 document.addEventListener('DOMContentLoaded', function () {
   const burgerButton = document.querySelector('.burger-btn');
   const closeButton = document.querySelector('.burger-button-close');
@@ -32,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
+// Reviews slider
 
 var swiper = new Swiper('.swiper', {
   slidesPerView: 1,
