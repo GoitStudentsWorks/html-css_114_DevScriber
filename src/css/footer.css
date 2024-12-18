@@ -72,10 +72,7 @@
 .footer-nav-link:hover,
 .footer-nav-link:focus,
 .footer-address-item:hover,
-.footer-address-item:focus {
-  background-color: var(--accent);
-  color: var(--primary-brand);
-}
+.footer-address-item:focus,
 .footer-address-item:active,
 .footer-nav-link:active {
   color: var(--primary-brand);
@@ -154,5 +151,12 @@
   }
   .footer-text {
     height: auto;
+  }
+  .footer-nav-link:hover,
+  .footer-nav-link:focus,
+  .footer-address-item:hover,
+  .footer-address-item:focus {
+    background-color: var(--accent);
+    color: var(--primary-brand);
   }
 }
