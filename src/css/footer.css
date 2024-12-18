@@ -61,14 +61,16 @@
   gap: 16px;
 }
 .footer-bottom-item {
+  display: flex;
   color: var(--accent);
   font-size: 14px;
   font-weight: 500;
   line-height: 143%;
+  gap: 8px;
 }
-.footer-privacy-slash {
+/*.footer-privacy-slash {
   margin: 0 8px;
-}
+}*/
 .footer-nav-link:hover,
 .footer-nav-link:focus,
 .footer-address-item:hover,
@@ -160,8 +162,8 @@
   .footer-text {
     height: auto;
   }
-  .footer-privacy-slash {
-    margin: 0 12px;
+  .footer-bottom-item {
+    gap: 12px;
   }
   .footer-nav-link:hover,
   .footer-nav-link:focus,
