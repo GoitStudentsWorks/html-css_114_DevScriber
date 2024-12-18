@@ -78,6 +78,14 @@
   color: var(--primary-brand);
   background-color: var(--white-text);
 }
+.footer-privacy:hover,
+.footer-privacy:focus,
+.footer-privacy:active,
+.cookie-settings:hover,
+.cookie-settings:focus,
+.cookie-settings:active {
+  color: var(--white-text);
+}
 @media only screen and (max-width: 767px) {
   .footer-boxlogo {
     width: 16px;
@@ -151,6 +159,9 @@
   }
   .footer-text {
     height: auto;
+  }
+  .footer-privacy-slash {
+    margin: 0 12px;
   }
   .footer-nav-link:hover,
   .footer-nav-link:focus,
