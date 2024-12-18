@@ -16,6 +16,8 @@
 .footer-text {
   max-width: 335px;
   height: 60px;
+}
+.footer-description {
   margin-bottom: 40px;
 }
 .footer-nav {
@@ -30,18 +32,27 @@
   line-height: 100%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+  padding: 0 4px;
+  border-radius: 8px;
+  transition: var(--transition-background-color), var(--transition-color);
 }
-.footer-address-list {
+.footer-menu {
+  margin-bottom: 76px;
+}
+.footer-address {
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
-  margin-bottom: 80px;
+  row-gap: 6px;
 }
 .footer-address-item {
   display: inline-flex;
+  max-width: fit-content;
   font-weight: 700;
   font-size: 14px;
   line-height: 143%;
+  padding: 0 4px;
+  border-radius: 8px;
+  transition: var(--transition-background-color), var(--transition-color);
 }
 
 .footer-bottom {
@@ -50,13 +61,27 @@
   gap: 16px;
 }
 .footer-bottom-item {
+  display: flex;
   color: var(--accent);
   font-size: 14px;
   font-weight: 500;
   line-height: 143%;
+  gap: 8px;
 }
-.footer-privacy-slash {
-  margin: 0 8px;
+.footer-nav-link:hover,
+.footer-nav-link:focus,
+.footer-address-item:hover,
+.footer-address-item:focus {
+  color: var(--primary-brand);
+  background-color: var(--white-text);
+}
+.footer-privacy:hover,
+.footer-privacy:focus,
+.footer-privacy:active,
+.cookie-settings:hover,
+.cookie-settings:focus,
+.cookie-settings:active {
+  color: var(--white-text);
 }
 @media only screen and (max-width: 767px) {
   .footer-boxlogo {
@@ -85,9 +110,10 @@
   }
   .footer-menu {
     width: 227px;
+    margin-bottom: 96px;
   }
   .footer-nav {
-    margin-bottom: 64px;
+    margin-bottom: 60px;
     row-gap: 24px;
   }
   .footer-bottom {
@@ -96,9 +122,8 @@
     width: 704px;
     justify-content: space-between;
   }
-  .footer-address-list {
-    margin-bottom: 100px;
-    row-gap: 24px;
+  .footer-address {
+    row-gap: 16px;
   }
   .footer-text,
   .footer-address-item,
@@ -113,17 +138,36 @@
   }
   .footer-description {
     margin-right: auto;
+    margin-bottom: 164px;
+    height: auto;
   }
   .footer-menu {
     display: flex;
     flex-direction: row;
     width: 565px;
     gap: 121px;
+    margin-bottom: auto;
+  }
+  .footer-nav {
+    margin-bottom: 124px;
   }
   .footer-bottom {
     width: 1080px;
   }
-  .footer-nav {
-    margin-bottom: 124px;
+  .footer-text {
+    height: auto;
+  }
+  .footer-bottom-item {
+    gap: 12px;
+  }
+  .footer-nav-link:hover,
+  .footer-nav-link:focus,
+  .footer-address-item:hover,
+  .footer-address-item:focus {
+    background-color: var(--accent);
+  }
+  .footer-address-item:active,
+  .footer-nav-link:active {
+    background-color: var(--white-text);
   }
 }
