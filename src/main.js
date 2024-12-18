@@ -40,7 +40,7 @@ var swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
