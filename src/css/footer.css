@@ -170,6 +170,5 @@
   .footer-address-item:hover,
   .footer-address-item:focus {
     background-color: var(--accent);
-    color: var(--primary-brand);
   }
 }
