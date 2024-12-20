@@ -1,28 +1,35 @@
-.shopping-cart {
-  position: fixed;
-  left: 5%;
-  border-radius: 30px;
-  padding: 20px;
-  width: 90%;
-  background-color: var(--green-background);
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+.hidden {
+  display: none;
 }
 
-.shopping-cart.hidden {
-  transform: translateY(-100%);
+.shopping-cart {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--green-background);
+  max-height: 100vh;
+  overflow-y: auto;
   opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.shopping-cart.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .cart-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 .cart-items {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .cart-item {
@@ -32,14 +39,68 @@
   gap: 10px;
   border-radius: 40px;
   padding: 12px;
-  background-color: #fbfbfb;
+  background-color: var(--primary-brand);
   color: var(--black-text);
 }
 
-.cart-item-titel {
-  text-transform: uppercase;
-  color: var(--primary-brand);
+.cart-item-details {
+  background-color: var(--white-text);
+  border-radius: 30px;
+  padding-top: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-word; /* Добавьте это свойство */
+  width: 100px;
+}
+.cart-quantity-controls {
+  display: flex;
+  align-items: center;
+}
+.cart-quantity-controls button {
+  width: 24px;
+  height: 24px;
   font-size: 20px;
+  border: 2px solid var(--white-text);
+  border-radius: 8px;
+  color: var(--white-text);
+  cursor: pointer;
+  margin: 20px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.cart-quantity-controls button:hover,
+.cart-quantity-controls button:focus {
+  background-color: var(--accent);
+}
+
+.cart-quantity-controls input {
+  width: 40px;
+  height: 24px;
+  text-align: center;
+  border: 2px solid var(--white-text);
+  border-radius: 8px;
+  color: var(--white-text);
+}
+.cart-item-price {
+  width: 88px;
+  text-align: center;
+  color: var(--white-text);
+}
+
+.cart-item-name {
+  color: var(--primary-brand);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .cart-total {
@@ -47,6 +108,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-transform: uppercase;
 }
 
 .cart-button-list {
@@ -55,14 +117,11 @@
   align-items: center;
 }
 
-.cart-button-item {
-}
-
 .continue-shopping,
 .checkout-button {
   display: inline-block;
   padding: 16px 32px;
-  background-color: #28a745;
+  background-color: var(--primary-brand);
   color: #fff;
   text-align: center;
   border: none;
@@ -70,45 +129,63 @@
   margin-top: 20px;
   border-radius: 30px;
   text-transform: uppercase;
+  transition: var(--transition-background-color);
 }
 
-.continue-shopping {
-  background-color: #007bff;
+.continue-shopping:hover,
+.checkout-button:hover,
+.continue-shopping:focus,
+.checkout-button:focus {
+  background-color: var(--white-text);
+  color: var(--primary-brand);
 }
 
-.continue-shopping:hover {
-  background-color: #0069d9;
+@media only screen and (min-width: 768px) {
+  .shopping-cart {
+    padding: 50px 0;
+  }
+  .cart-title {
+    margin-bottom: 50px;
+  }
+  .cart-item-details {
+    width: 150px;
+  }
+  .cart-item-details img {
+    width: 120px;
+  }
+  .cart-item-name {
+    font-size: 18px;
+  }
+  .cart-quantity-controls button,
+  .cart-quantity-controls input {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .cart-quantity-controls input {
+    width: 80px;
+  }
+  .cart-item-price {
+    font-size: 20px;
+  }
+
+  .cart-total {
+    font-size: 24px;
+  }
 }
 
-.checkout-button:hover {
-  background-color: #218838;
-}
-
-/* Стили счетчика кол-ва товаров */
-.quantity-controls {
-  display: flex;
-  align-items: center;
-}
-
-.quantity-controls button {
-  width: 25px;
-  height: 25px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 25px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-.quantity-controls button:hover {
-  background-color: #0056b3;
-}
-
-.quantity-controls input {
-  width: 40px;
-  text-align: center;
-  border: 1px solid #ccc;
+@media only screen and (min-width: 1280px) {
+  .continue-shopping:hover,
+  .checkout-button:hover,
+  .continue-shopping:focus,
+  .checkout-button:focus {
+    background-color: var(--accent);
+    color: var(--primary-brand);
+  }
+  .continue-shopping:active,
+  .checkout-button:active {
+    background-color: var(--white-text);
+    color: var(--primary-brand);
+  }
 }
